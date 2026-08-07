@@ -30,6 +30,23 @@ Vibration motor
 Push button
 Battery
 
+## Bill of Materials
+
+| Item | Quantity |
+|------|:--------:|
+| ESP32-WROOM-32 DevKit V1 | 1 |
+| HC-SR04 Ultrasonic Sensor | 1 |
+| Water Sensor Module | 1 |
+| Buzzer | 1 |
+| Vibration Motor | 1 |
+| Push Button | 1 |
+| NEO-6M GPS Module | 1 |
+| SIM800L GSM Module | 1 |
+| Breadboard | 1 |
+| Jumper Wires | 1 |
+| Battery | 1 |
+
+**Complete BOM:** [blind_assistance_smart_stick_BOM.csv](blind_assistance_smart_stick_BOM.csv)
 ## Software
 
  Arduino IDE
