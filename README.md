@@ -46,7 +46,7 @@ Battery
 | Jumper Wires | 1 |
 | Battery | 1 |
 
-**Complete BOM:** [blind_assistance_smart_stick_BOM.csv](blind_assistance_smart_stick_BOM.csv)
+**Complete BOM:** [blind_assistance_smart_stick_BOM.csv](blind _assistance_ smart _stick_ BOM.csv)
 ## Software
 
  Arduino IDE
