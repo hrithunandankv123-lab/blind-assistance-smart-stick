@@ -1,7 +1,7 @@
 #include <HardwareSerial.h>
 #include <TinyGPS++.h>
 
-// ================= PIN DEFINITIONS =================
+//PIN DEFINITIONS 
 
 // Ultrasonic sensor
 int trigPin = 5;
@@ -26,7 +26,7 @@ int gsmRx = 4;
 int gsmTx = 2;
 
 
-// ================= GPS AND SERIAL =================
+//GPS AND SERIAL
 
 TinyGPSPlus gps;
 
@@ -34,8 +34,7 @@ HardwareSerial gpsSerial(1);
 HardwareSerial gsmSerial(2);
 
 
-// ================= SETTINGS =================
-
+//SETTINGS
 // Obstacle distance in centimeters
 int obstacleDistance = 50;
 
@@ -43,7 +42,7 @@ int obstacleDistance = 50;
 int waterThreshold = 1500;
 
 
-// ================= SETUP =================
+//SETUP
 
 void setup() {
 
@@ -79,28 +78,27 @@ void setup() {
 }
 
 
-// ================= MAIN LOOP =================
-
+//MAIN LOOP 
 void loop() {
 
-  // -------- GPS DATA --------
+  //GPS DATA
 
   while (gpsSerial.available()) {
     gps.encode(gpsSerial.read());
   }
 
 
-  // -------- ULTRASONIC --------
+  //ULTRASONIC 
 
   int distance = getDistance();
 
 
-  // -------- WATER SENSOR --------
+  //WATER SENSOR
 
   int waterVal = analogRead(waterSensor);
 
 
-  // -------- SERIAL MONITOR --------
+  //SERIAL MONITOR 
 
   Serial.print("Distance: ");
   Serial.print(distance);
@@ -110,7 +108,7 @@ void loop() {
   Serial.println(waterVal);
 
 
-  // -------- OBSTACLE / WATER ALERT --------
+  //OBSTACLE / WATER ALERT 
 
   if ((distance > 0 && distance <= obstacleDistance) ||
       waterVal > waterThreshold) {
@@ -128,7 +126,7 @@ void loop() {
   }
 
 
-  // -------- SOS BUTTON --------
+  //SOS BUTTON 
 
   if (digitalRead(sosButton) == LOW) {
 
@@ -145,8 +143,7 @@ void loop() {
 }
 
 
-// ================= ULTRASONIC FUNCTION =================
-
+//ULTRASONIC FUNCTION
 int getDistance() {
 
   // Make sure trigger is LOW
@@ -173,14 +170,13 @@ int getDistance() {
 }
 
 
-// ================= SOS FUNCTION =================
-
+//SOS FUNCTION
 void sendSOS() {
 
   Serial.println("Preparing SOS alert...");
 
 
-  // -------- GET GPS LOCATION --------
+  // GET GPS LOCATION
 
   String locationMessage;
 
@@ -209,7 +205,7 @@ void sendSOS() {
   }
 
 
-  // -------- GSM SMS --------
+  //GSM SMS
 
   gsmSerial.println("AT");
   delay(1000);
