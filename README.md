@@ -1,5 +1,5 @@
 # Blind Assistance Smart Stick
-![Project Thumbnail](THUMBNAIL NEW.png)
+![Project Thumbnail](thumbnail.png)
 
 
 An ESP32 based smart stick designed to help visually impaired people move more safely and independently.
