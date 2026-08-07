@@ -1,0 +1,14 @@
+Item,Purpose,Quantity,Purchase / Reference Link
+ESP32-WROOM-32 DevKit V1,Main microcontroller,1,https://thinkingrobot.in/products/esp32-wroom-32-devkit-v1-wi-fi-bluetooth-iot-board
+HC-SR04 Ultrasonic Sensor,Obstacle distance detection,1,https://www.flipkart.com/
+Water Sensor Module,Water detection,1,https://robu.in/
+Buzzer,Audible alert,1,https://robocraze.com/
+Vibration Motor,Vibration alert,1,https://robocraze.com/
+Push Button,SOS emergency button,1,https://robocraze.com/
+NEO-6M GPS Module,GPS location tracking,1,https://robu.in/
+SIM800L GSM Module,SMS emergency alert,1,https://robocraze.com/products/sim-800l-gsm-gprs-module
+SIM Card,Cellular connection for SIM800L,1,https://www.airtel.in/
+Battery / Suitable Power Supply,Portable power supply,1,https://robu.in/
+Breadboard,Prototype assembly,1,https://robocraze.com/
+Jumper Wires,Circuit connections,1,https://robocraze.com/
+USB Cable,Programming ESP32,1,https://robocraze.com/
