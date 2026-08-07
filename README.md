@@ -47,6 +47,9 @@ Battery
 | Battery | 1 |
 
 **Complete BOM:** [blind_assistance_smart_stick_BOM.csv](blind_assistance_smart_stick_BOM.csv)
+
+## Source Code
+- [BLIND_ASSISTANCE_SMART_STICK.ino](BLIND_ASSISTANCE_SMART_STICK/BLIND_ASSISTANCE_SMART_STICK.ino)
 ## Software
 
  Arduino IDE
