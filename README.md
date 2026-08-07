@@ -1,7 +1,7 @@
 # Blind Assistance Smart Stick
 ![Project Thumbnail](thumbnail.png)
 ## Wiring Diagram
-![wiring diagram](wiring_diagram.png)
+![Wiring Diagram](wiring diagram.png)
 
 An ESP32 based smart stick designed to help visually impaired people move more safely and independently.
 The system uses an ESP32 microcontroller to process information from sensors. An ultrasonic sensor detects obstacles, while a water sensor detects water on the ground. When an obstacle or water is detected, the system provides alert through a buzzer and vibration motor. An SOS button is included for emergency alerts. The project also includes optional GPS and GSM modules for sending the user's location to a family member or caretakers.
